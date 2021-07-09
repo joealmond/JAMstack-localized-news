@@ -8,7 +8,7 @@ layout: base.njk
     <div class="vibe">Szervusz</div>
     <div class="love">❤️</div>
         <ul>
-        {% for article in news[19].articles %}
+        {% for article in news[0].articles %}
             <li><h3><a href="{{ article.url }}">{{ article.title }}</a><h2></li>
             <span> {{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
         {% endfor %}
