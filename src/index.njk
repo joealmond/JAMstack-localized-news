@@ -1,0 +1,18 @@
+---
+title: A page for you
+layout: base.njk
+---
+
+<div class="container">
+    <h1>Ez egy weboldal neked</h1>
+    <div class="vibe">Szervusz</div>
+    <div class="love">❤️</div>
+        <ul>
+        {% for article in news.articles %}
+            <li><h3><a href="{{ article.url }}">{{ article.title }}</a><h2></li>
+            <span> {{ article.source.name }} - <time>{{ article.publishedAt }}</time></span>
+        {% endfor %}
+
+        </ul>
+</div>
+<script src="/js/vibe.js"></script>
